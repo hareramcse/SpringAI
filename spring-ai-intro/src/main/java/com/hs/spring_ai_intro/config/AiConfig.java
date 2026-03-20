@@ -9,7 +9,7 @@ public class AiConfig {
 
 	ChatClient chatClient;
 
-	@Bean(name = "openAiChatClient")
+	@Bean(name = "chatClient")
 	public ChatClient chatClient(ChatClient.Builder chatClientBuilder) {
 		return chatClientBuilder.build();
 	}
