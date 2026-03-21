@@ -1,0 +1,25 @@
+spring:
+    application:
+        name: spring-ai-rag
+    datasource:
+        url: jdbc:postgresql://localhost:5432/postgres
+        username: postgres
+        password: password
+    ai:
+        openai:
+            api-key: ${OPENAI_API_KEY}
+        vectorstore:
+            pgvector:
+                index-type: HNSW
+                dimension: 1536
+                distance-type: COSINE_DISTANCE
+                initialize-schema: true
+
+logging:
+    level:
+        org:
+            springframework:
+                ai:
+                    chat:
+                        client:
+                            advisor: DEBUG
