@@ -1,0 +1,18 @@
+spring:
+    application:
+        name: spring-ai-tool
+    ai:
+        openai:
+            api-key: ${OPENAI_API_KEY}
+
+logging:
+    level:
+        org:
+            springframework:
+                ai:
+                    chat:
+                        client:
+                            advisor: DEBUG
+app:
+    weather:
+        api-key: ${WEATHER_API_KEY}
