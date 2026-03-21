@@ -12,3 +12,8 @@ spring:
         properties:
             hibernate:
                 dialect: org.hibernate.dialect.PostgreSQLDialect
+    ai:
+        mcp:
+            server:
+                name: shopping-cart-mcp-server
+                version: 1.0.0

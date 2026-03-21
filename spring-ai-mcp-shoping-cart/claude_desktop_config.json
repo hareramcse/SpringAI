@@ -1,6 +1,6 @@
 {
 	"mcpServers": {
-		"shopping-cart-server": {
+		"shopping-cart-mcp-server": {
 			"command": "java",
 			"args": [
 				"-jar",
